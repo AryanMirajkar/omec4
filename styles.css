@@ -1,0 +1,266 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #003366, #0077b6); /* Apply a gradient background */
+    color: white; /* Set font color to white for better contrast */
+    padding: 5px 0; /* Increase padding for better spacing */
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    border-bottom: 2px solid #fff; /* Add a bottom border for separation */
+    border-radius: 0 0 20px 20px; /* Add border radius to the bottom corners for a softer look */
+    font-size: 36px; /* Increase font size for the text */
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Added margin bottom to separate logo and heading */
+}
+
+h1 {
+    font-size: 40px; /* Adjust font size of the heading */
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Added margin bottom to separate heading and navigation */
+}
+
+/* Navigation Bar */
+.nav-container {
+    text-align: right; /* Align the navigation bar to the right */
+    margin-top: 20px;
+    margin-right: 30px; /* Adjust margin as needed */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Add margin on the left side of each navigation item */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first navigation item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white; /* Adjust font color as needed */
+    font-size: 20px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:yellow; /* Change color on hover */
+}
+
+/* Products Section */
+#products {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 36px; /* Increase font size for emphasis */
+    margin-bottom: 40px;
+    color: #333; /* Match text color with anchor tags */
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+/* Blinking animation */
+@keyframes blink {
+    0% {
+        opacity: 2;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+    color: #003366; /* Change color as needed */
+    text-decoration: underline;
+    
+}
+
+
+/* About Section */
+#about {
+    margin-top:-1000px;
+    position: relative;
+    background-color:#f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px; /* Reduced padding */
+    margin-top: -50px;
+    z-index: 1;
+}
+
+#about h2 {
+    font-size: 36px; /* Reduced font size */
+    margin-bottom: 20px;
+    animation: fadeInDown 2s ease;
+}
+
+#about p {
+    font-size: 25px; /* Reduced font size */
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.grid-container {
+    margin-top: -10px;;
+    background-color:  #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+    gap:0px; /* Gap between grid items */
+    padding:0px; /* Padding for the container */
+}
+
+.grid-item {
+    background-color: #f5f5f5; /* Background color for grid items */
+    text-align: center; /* Center align content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 70%; /* Maximum width for images */
+    max-height: 70%; /* Maximum height for images */
+    height: auto; /* Maintain aspect ratio of images */
+}
+#nana1{
+     
+        max-width: 70%; /* Maximum width for images */
+        max-height: 60%; /* Maximum height for images */
+        height: auto; /* Maintain aspect ratio of images */
+    
+}
+#nana2{
+    
+        max-width: 60%; /* Maximum width for images */
+        max-height: 100%; /* Maximum height for images */
+        height: auto; /* Maintain aspect ratio of images */
+
+}
+#nana3{
+    max-width: 100%; /* Maximum width for images */
+    max-height: 55%; /* Maximum height for images */
+    height: auto; /* Maintain aspect ratio of images */
+
+}
+
+
+
+/* Footer */
+footer {
+        background: linear-gradient(to right, #003366, #0077b6); /* Apply a gradient background */
+        color: white; /* Set font color to white for better contrast */
+        padding: 10px 0; /* Increase padding for better spacing */
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+        border-bottom: 2px solid #fff; /* Add a bottom border for separation */
+        border-radius: 20px 20px 0 0; /* Add border radius to the bottom corners for a softer look */
+     /* Increase font size for the text */
+    
+    
+}
+footer h2{
+    text-decoration: underline;
+}
+footer p {
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 10px;
+     /* Add margin bottom for separation */
+}
+
+footer a {
+    font-size:20px;
+    color: #ffd700; /* Change link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #10fadb; /* Change link color on hover */
+}
